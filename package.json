@@ -3,16 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "(export PATH=$(npm bin):$PATH; trap 'jobs -pr | xargs kill' EXIT; TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./styles/globals.css --watch </dev/zero & next dev)",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
-    "css:dev": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./styles/globals.css --watch",
-    "css:build": "postcss ./styles/tailwind.css -o ./styles/globals.css"
+    "test": "jest"
   },
   "dependencies": {
-    "next": "11.1.2",
+    "next": "^12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
